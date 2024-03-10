@@ -16,3 +16,4 @@ export { PopularCategoryCard } from './popular-category-card';
 export { ProductCardLoading } from './product-card/card-loading';
 export { CustomTextArea } from './text-area';
 export { PopularCategoryCardLoading } from './popular-category-card/category-card-loading';
+export {Typography} from './typography'

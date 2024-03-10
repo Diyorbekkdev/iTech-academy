@@ -6,9 +6,11 @@ import { IProduct } from '@/types/product.types';
 
 import { FC } from 'react';
 import Slider from 'react-slick';
+import { MotionDiv } from '../motion-div/motion-div';
 
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+
 
 interface ISlider {
   items?: {
@@ -89,11 +91,12 @@ export const CustomSlider: FC<ISlider> = (props) => {
         className={sliderClass}
       >
         {sliderData?.map((item, idx) => (
-          <Component
-            lang={lang}
-            key={idx}
-            {...item}
-          />
+          <MotionDiv direction='down' delay={0.5} key={idx}>
+            <Component
+              lang={lang}
+              {...item}
+            />
+          </MotionDiv>
         ))}
       </Slider>
     </div>

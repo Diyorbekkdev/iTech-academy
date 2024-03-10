@@ -4,12 +4,12 @@ import { HeaderTop } from '@/components/header/header-top';
 import { authenticate, setIsFixed, setUser } from '@/features';
 import { useAppDispatch, useAppSelector, useLocaleNavigate } from '@/hooks';
 import { useLocaleLink } from '@/hooks/locale-link';
-import { enter_icon, } from '@/mock';
+import { enter_icon } from '@/mock';
 import { headerData } from '@/mock/header.data';
 import { TLocale } from '@/types';
 import { httpClient } from '@/utils';
 
-import { useEffect, } from 'react';
+import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 
 import { Avatar, Button, Image, useDisclosure } from '@nextui-org/react';
@@ -59,8 +59,6 @@ export const Header = ({ lang }: IHeader) => {
     }
   };
 
-
-
   useEffect(() => {
     getUser();
     window.addEventListener('scroll', onWindowScroll);
@@ -73,7 +71,7 @@ export const Header = ({ lang }: IHeader) => {
   }, []);
 
   return (
-    <header>
+    <header className="border-b-1 mb-5">
       <HeaderTop data={headerData.headerTop} />
       <nav className={isFixed ? 'fixed shadow-lg top-0 left-0 w-full z-[50] bg-white' : ''}>
         <div
