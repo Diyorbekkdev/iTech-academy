@@ -1,0 +1,57 @@
+{
+  "header": {
+    "enter": "Kabinet",
+    "about_us": "Biz haqimizda",
+    "delivery": "Yetkazib berish",
+    "shop": "Doʻkonlar",
+    "contact": "Biz bilan bogʻlaning!",
+    "cart": "Savat",
+    "favourites": "Saqlangan",
+    "login": "Kirish",
+    "profile": "Profil",
+    "catalog": "Katalog",
+    "search": "Mahsulotlarni qidirish",
+    "searching": "Izlash",
+    "basket": "Savatcha",
+    "signIn": "Kirish",
+    "home": "Asosiy",
+    "join": "Bizga qo'shiling:"
+  },
+  "top-categories": {
+    "product_categories": "MAHSULOTLAR KATEGORIYASI",
+    "laptops": "Noutbuklar",
+    "smart_watches": "Aqlli soatlar",
+    "smart_phones": "Smartfonlar",
+    "discounts": "Aksiyalar",
+    "push_button_phones": "Tugmali telefonlar"
+  },
+  "footer-link": {
+    "questions": "Sizda savol bormi? Unda bizga qo'ng'iroq qiling",
+    "time": "Ish vaqti:",
+    "everyday": "Har kuni : 09:00 - 21:00",
+    "data": "Mijozlar uchun",
+    "delivery_ways": "Yetkazib berish usullari",
+    "guarantee": "Kafolat",
+    "actions": "Maxfiylik kelishuvi",
+    "give-back": "Buyurtmani qaytarish tartibi",
+    "help": "Yordam markazi",
+    "services": "Xizmatlar",
+    "payment_methods": "To'lov usullari    ",
+    "on_term_payment": "Muddatli toʻlov haqida",
+    "collaboration": "Hamkorlik    ",
+    "return_order": "Qaytarish tartibi",
+    "for_customers": "Mizojlar uchun",
+    "delivery": "Yetkazib berish",
+    "contact_us": "Biz bilan bog‘laning!",
+    "services_center": "Servis center",
+    "leave_a_comment": "Izoh qoldirish",
+    "vacancies": "Vakansiyalar",
+    "store_application": "Sizning doʻkoningiz endi doimo yoningizda!",
+    "about_application": "Smartfonlar, planshetlar va eng soʻnggi elektronika mahsulotlarini Mediapark ilovasida topishingiz mumkin."
+  },
+  "auth":{
+      "verified_success": "Muvaffaqiyatli tasdiqlandi"
+  },
+  "popularBrands": "Ommabop brendlar",
+  "why": "Nega aynan Mediapark?"
+}
