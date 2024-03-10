@@ -1,5 +1,5 @@
-import main_banner from '@/images/main-banner.svg';
 import { change_icon, check_file, delivery, faq, guarantee } from '@/mock/index';
+import itechMainbanner from '@/images/iTech-main-banner.png';
 
 export interface ISlide {
   url: string;
@@ -50,10 +50,10 @@ export const popularBrandData: ISlide[] = [
 
 export const bannerData: ISlide[] = [
   {
-    url: main_banner.src,
+    url: itechMainbanner.src,
   },
   {
-    url: main_banner.src,
+    url: itechMainbanner.src,
   },
 ];
 

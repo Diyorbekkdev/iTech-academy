@@ -10,7 +10,6 @@ import { useTranslations } from 'next-intl';
 
 export const HeaderTop = ({ data }: { data: IHeaderTop[] }) => {
   const t = useTranslations('header');
-  const { data: userData } = useAppSelector((state) => state.user);
   return (
     <div className="bg-light-gray">
       <div className="hidden container lg:flex items-center justify-between gap-7">
@@ -32,7 +31,7 @@ export const HeaderTop = ({ data }: { data: IHeaderTop[] }) => {
             ))}
           </div>
           <span className="text-dark-gray">|</span>
-          <a href={`tel:${userData?.phone}`}>{userData?.phone}</a>
+          <a href={`tel:+998 95 007 70 50`}>+998 95 007 70 50</a>
         </div>
         <div className="ml-auto">
           <LocaleSwitcher />

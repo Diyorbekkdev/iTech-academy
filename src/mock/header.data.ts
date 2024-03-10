@@ -36,11 +36,11 @@ export const headerJoinData: IHeaderJoin[] = [
   {
     id: '1',
     icon: telegram,
-    url: 'https://t.me/',
+    url: 'https://t.me/itechacademy_uz',
   },
   {
     id: '2',
     icon: instagram,
-    url: 'https://instagram.com/',
+    url: 'https://instagram.com/itechacademy_uz',
   },
 ];

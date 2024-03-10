@@ -268,6 +268,15 @@
   animation: pulse-green 2s infinite;
 }
 
+.main__title{
+  margin: 0px;
+  color: rgb(20, 32, 51);
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
 @keyframes pulse-green {
   0% {
     transform: scale(0.95);

@@ -45,7 +45,8 @@ import visa from '@/icons/visa.svg';
 import washingMachine_icon from '@/icons/washing-machine.svg';
 import youtube from '@/icons/youtube.svg';
 import filter_icon from '@/icons/sort.svg';
-
+import iTechMiniBanner from '@/images/itech-mini-banner.jpg';
+import iTechMiniBanne2 from '@/images/itech-mini-banner -2.jpg';
 export {
   tv_icon,
   twitter,
@@ -94,6 +95,8 @@ export {
   logout,
   percent,
   filter_icon,
+  iTechMiniBanner,
+  iTechMiniBanne2,
 };
 
 export { installmentPayments } from './product.data';
