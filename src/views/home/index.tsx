@@ -12,6 +12,7 @@ import { Image } from '@nextui-org/react';
 
 import { ImageCard } from './components';
 import { AboutCards } from './components/about-cards';
+import { OurCourses } from './components/our-courses';
 import { StudentsOpinion } from './components/students-opinion';
 import { WhyItech } from './components/why-iTech';
 
@@ -106,6 +107,7 @@ export const HomePage = ({ lang }: IHomePage) => {
       </div>
       <WhyItech />
       <StudentsOpinion />
+      <OurCourses />
     </section>
   );
 };

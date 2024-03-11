@@ -40,7 +40,7 @@ export const StudentsOpinion = () => {
   };
 
   return (
-    <section className="mt-10">
+    <section className="mt-10 mb-10">
       <MotionDiv
         direction="down"
         delay={2}
