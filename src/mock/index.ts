@@ -50,8 +50,9 @@ import washingMachine_icon from '@/icons/washing-machine.svg';
 import youtube from '@/icons/youtube.svg';
 import iTechMiniBanne2 from '@/images/itech-mini-banner -2.jpg';
 import iTechMiniBanner from '@/images/itech-mini-banner.jpg';
-
+import logo from '@/icons/logo.svg'
 export {
+  logo,
   tv_icon,
   twitter,
   telegram,
@@ -113,3 +114,4 @@ export { bannerData, popularCategoriesData } from './slider.data';
 export { footer_data, paymentMethod, application_link } from './footer.data';
 export { loadingData } from './product.data';
 export { categorPorudctsFilter } from './categories.data';
+export {marqueeData} from './maruqe-card.data'

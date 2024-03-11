@@ -2,12 +2,15 @@
 
 import { Banner, CustomSlider, Typography } from '@/components';
 import { MotionDiv } from '@/components/motion-div/motion-div';
-import { bannerData, iTechMiniBanne2, iTechMiniBanner } from '@/mock';
+import { bannerData, iTechMiniBanne2, iTechMiniBanner, marqueeData } from '@/mock';
 import { aboutCardData } from '@/mock/about-card.data';
 import { IPageParams } from '@/types';
 
+import Marquee from 'react-fast-marquee';
+
 import { Image } from '@nextui-org/react';
 
+import { ImageCard } from './components';
 import { AboutCards } from './components/about-cards';
 
 interface IHomePage extends IPageParams {}
@@ -53,22 +56,51 @@ export const HomePage = ({ lang }: IHomePage) => {
           </MotionDiv>
         </div>
       </div>
-      <Typography
-        variant="h1"
-        className="main__title"
-      >
-        “iTech Academy” bu -
-      </Typography>
-      <div className="flex items-center gap-2 justify-between mt-10">
+      <MotionDiv direction="left">
+        <Typography
+          variant="h1"
+          className="main__title"
+        >
+          “iTech Academy” bu -
+        </Typography>
+      </MotionDiv>
+      <div className="flex items-center gap-2 justify-between mt-10 flex-wrap lg:flex-nowrap">
         {aboutCardData.map((data, idex) => (
           <MotionDiv
             key={data?.description}
             delay={idex}
-            direction='down'
+            direction="down"
           >
             <AboutCards {...data} />
           </MotionDiv>
         ))}
+      </div>
+      <div className="mt-20">
+        <MotionDiv direction="down">
+          <Marquee className="">
+            {marqueeData.map((el) => (
+              <ImageCard
+                key={el.url}
+                imageUrl={el.url}
+              />
+            ))}
+          </Marquee>
+        </MotionDiv>
+      </div>
+      <div className="mt-10">
+        <MotionDiv direction="left">
+          <Typography
+            variant="h1"
+            className="main__title "
+          >
+            “iTech Academy” natijasi raqamlarda-
+          </Typography>
+        </MotionDiv>
+        <MotionDiv>
+          <p className="text-xs md:text-lg font-semibold text-muted mt-2">
+            2018-yil oktyabr oyidan 2023-yil aprel oyigacha bo‘lgan statistika
+          </p>
+        </MotionDiv>
       </div>
     </section>
   );
