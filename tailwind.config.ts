@@ -31,6 +31,7 @@ const config: Config = {
         'light-badge-green': '#04AE5E1A',
         'secondary-gray': '#F9FAFB',
         'transparent-gray': '#E8ECEF',
+        'light-pink': 'rgb(243, 248, 255)',
       },
       fontSize: {
         'xxs': '0.625rem',
