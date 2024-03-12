@@ -17,7 +17,7 @@ export const Card: React.FC<CardProps> = ({ item, nextArrow }) => {
   return (
     <div
       key={item.id}
-      className="p-10 cursor-pointer relative my-3 bg-light-pink rounded-[20px] sm:w-full group items-center hover:rotate-0"
+      className="p-10 cursor-pointer relative my-3 bg-light-pink rounded-[20px] sm:w-full group items-center hover:rotate-0 shadow-sm hover:shadow-xl transition ease-in-out duration-300"
     >
       <Image
         className="mb-4 ml-16 mt-5"
@@ -38,4 +38,3 @@ export const Card: React.FC<CardProps> = ({ item, nextArrow }) => {
     </div>
   );
 };
-

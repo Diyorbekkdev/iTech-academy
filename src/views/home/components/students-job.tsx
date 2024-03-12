@@ -1,6 +1,6 @@
 import { Typography } from '@/components';
 import { MotionDiv } from '@/components/motion-div/motion-div';
-import { studentsJob } from '@/mock/students-jobs.data';
+import { studentsJob, studentsJobSecond } from '@/mock/students-jobs.data';
 
 import Marquee from 'react-fast-marquee';
 
@@ -22,6 +22,21 @@ export const StudentsWork = () => {
         <MotionDiv direction="down">
           <Marquee className="w-72 h-24 overflow-y-hidden">
             {studentsJob.map((el) => (
+              <ImageCard
+                key={el.url}
+                imageUrl={el.url}
+              />
+            ))}
+          </Marquee>
+        </MotionDiv>
+
+        <MotionDiv direction="right">
+          <Marquee
+            className="w-72 h-24 mt-6 overflow-y-hidden"
+            direction="right"
+            delay={1}
+          >
+            {studentsJobSecond.map((el) => (
               <ImageCard
                 key={el.url}
                 imageUrl={el.url}
