@@ -12,6 +12,11 @@ import { Image } from '@nextui-org/react';
 
 import { ImageCard } from './components';
 import { AboutCards } from './components/about-cards';
+import { OurCourses } from './components/our-courses';
+import { StudentsWork } from './components/students-job';
+import { StudentsOpinion } from './components/students-opinion';
+import { StudentsReward } from './components/students-rewards';
+import { WhyItech } from './components/why-iTech';
 
 interface IHomePage extends IPageParams {}
 
@@ -102,6 +107,11 @@ export const HomePage = ({ lang }: IHomePage) => {
           </p>
         </MotionDiv>
       </div>
+      <WhyItech />
+      <StudentsOpinion />
+      <OurCourses />
+      <StudentsReward />
+      <StudentsWork />
     </section>
   );
 };

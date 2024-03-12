@@ -26,12 +26,15 @@ import list_filled from '@/icons/list-filled.svg';
 import list_outlined from '@/icons/list-outlined.svg';
 import location_icon from '@/icons/location.svg';
 import logo_icon from '@/icons/logo.svg';
+import logo from '@/icons/logo.svg';
 import logout from '@/icons/logout.svg';
 import minus_icon from '@/icons/minus.svg';
+import nextArrow from '@/icons/next-arrow.svg';
 import payme from '@/icons/payme.svg';
 import percent from '@/icons/percent.svg';
 import phone_icon from '@/icons/phone.svg';
 import plus_icon from '@/icons/plus.svg';
+import prevArrow from '@/icons/prev-arrow.svg';
 import programming from '@/icons/programming.svg';
 import refrigerator_icon from '@/icons/refrigerator.svg';
 import search_icon from '@/icons/search.svg';
@@ -47,12 +50,18 @@ import uzcard from '@/icons/uzcARD.svg';
 import vacuumCleaner_icon from '@/icons/vacuum-cleaner.svg';
 import visa from '@/icons/visa.svg';
 import washingMachine_icon from '@/icons/washing-machine.svg';
+import whyItech from '@/icons/why-iTech.svg';
 import youtube from '@/icons/youtube.svg';
 import iTechMiniBanne2 from '@/images/itech-mini-banner -2.jpg';
 import iTechMiniBanner from '@/images/itech-mini-banner.jpg';
-import logo from '@/icons/logo.svg'
+import paymePng from '@/images/payme.png';
+
 export {
+  paymePng,
+  nextArrow,
+  prevArrow,
   logo,
+  whyItech,
   tv_icon,
   twitter,
   telegram,
@@ -114,4 +123,4 @@ export { bannerData, popularCategoriesData } from './slider.data';
 export { footer_data, paymentMethod, application_link } from './footer.data';
 export { loadingData } from './product.data';
 export { categorPorudctsFilter } from './categories.data';
-export {marqueeData} from './maruqe-card.data'
+export { marqueeData } from './maruqe-card.data';

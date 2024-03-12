@@ -12,7 +12,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({ imageUrl }) => {
       <Image
         src={imageUrl}
         alt="images"
-        className="w-full h-full object-cover rounded-md cursor-pointer"
+        className="w-full object-contain h-full  rounded-md cursor-pointer"
         classNames={{
           wrapper: 'w-full h-full object-cover rounded-md cursor-pointer',
         }}

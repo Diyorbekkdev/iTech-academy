@@ -1,0 +1,100 @@
+import { Typography } from '@/components';
+import { MotionDiv } from '@/components/motion-div/motion-div';
+import { nextArrow, prevArrow } from '@/mock';
+import { studentOpinionsData } from '@/mock/students-opinion.data';
+
+import { useRef } from 'react';
+import Slider from 'react-slick';
+
+import Image from 'next/image';
+
+import StudentOpinion from './student-option';
+
+export const StudentsOpinion = () => {
+  const sliderRef = useRef(null);
+
+  const handleNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const handlePrevious = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
+  return (
+    <section className="mt-10 mb-10">
+      <MotionDiv
+        direction="down"
+        delay={2}
+      >
+        <Typography
+          variant="h1"
+          className="main__title flex justify-between gap-3"
+        >
+          O‘quvchilarning fikrlari
+          <div>
+            <button
+              onClick={handlePrevious}
+              type="button"
+              className="mr-4 p-2 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 rounded-full"
+            >
+              <Image
+                src={prevArrow.src}
+                alt="Arrow"
+                width={32}
+                height={32}
+              />
+            </button>
+            <button
+              onClick={handleNext}
+              type="button"
+              className="ml-4 p-2 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 rounded-full"
+            >
+              <Image
+                src={nextArrow.src}
+                alt="Arrow"
+                width={32}
+                height={32}
+              />
+            </button>
+          </div>
+        </Typography>
+      </MotionDiv>
+
+      <div className="mt-10 w-full">
+        <Slider
+          ref={sliderRef}
+          {...settings}
+          className=" grid grid-cols-[1fr_1fr_1fr] sm:grid-cols-1 gap-1"
+        >
+          {studentOpinionsData.map((opinion) => (
+            <StudentOpinion
+              key={opinion.name}
+              name={opinion.name}
+              videoUrl={opinion.videoUrl}
+              text={opinion.text}
+            />
+          ))}
+        </Slider>
+      </div>
+    </section>
+  );
+};
