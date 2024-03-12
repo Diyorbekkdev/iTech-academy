@@ -18,9 +18,9 @@ export const StudentsWork = () => {
         </Typography>
       </MotionDiv>
 
-      <div className="mt-20">
+      <div className="mt-20 ">
         <MotionDiv direction="down">
-          <Marquee className="w-72 h-24">
+          <Marquee className="w-72 h-24 overflow-y-hidden">
             {studentsJob.map((el) => (
               <ImageCard
                 key={el.url}
