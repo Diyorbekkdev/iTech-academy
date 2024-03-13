@@ -8,8 +8,6 @@ import Slider from 'react-slick';
 
 import Image from 'next/image';
 
-import StudentOpinion from './student-option';
-
 export const StudentsOpinion = () => {
   const sliderRef = useRef<Slider | null>(null);
 
@@ -87,12 +85,24 @@ export const StudentsOpinion = () => {
           className=" grid grid-cols-[1fr_1fr_1fr] sm:grid-cols-1 gap-1"
         >
           {studentOpinionsData.map((opinion) => (
-            <StudentOpinion
-              key={opinion.name}
-              name={opinion.name}
-              videoUrl={opinion.videoUrl}
-              text={opinion.text}
-            />
+            <div
+              key={opinion.id}
+              className="relative flex flex-col items-center bg-light-gray shadow-md rounded-lg overflow-hidden"
+            >
+              <h3 className="text-xl font-semibold absolute bottom-9 left-3 bg-white py-4 px-[18px] rounded-full">
+                {opinion.name}
+              </h3>
+              <video
+                width="100%"
+                height="300px"
+                src={opinion.videoUrl}
+                controls
+                className="object-cover"
+                title={`${opinion.name}'s Opinion Video`}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
           ))}
         </Slider>
       </div>
