@@ -4,7 +4,6 @@ import { MotionDiv } from '@/components/motion-div/motion-div';
 import { nextArrow } from '@/mock';
 import { ourCoursesData } from '@/mock/our-courses.data';
 
-import Image from 'next/image';
 
 export const OurCourses = () => {
   return (

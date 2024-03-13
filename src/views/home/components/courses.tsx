@@ -34,7 +34,7 @@ export const Courses = () => {
                 height={48}
               />
               <h1 className="text-2xl font-semibold leading-6 mb-4">{item.title}</h1>
-              <p>{item.desc}</p>
+              {/* <p>{item.desc}</p> */}
             </div>
           </MotionDiv>
         ))}
