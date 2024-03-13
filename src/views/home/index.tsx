@@ -13,6 +13,7 @@ import { Image } from '@nextui-org/react';
 import { ImageCard } from './components';
 import { AboutCards } from './components/about-cards';
 import { OurCourses } from './components/our-courses';
+import { ResultsWithNumbersCard } from './components/results-with-number';
 import { StudentsWork } from './components/students-job';
 import { StudentsOpinion } from './components/students-opinion';
 import { StudentsReward } from './components/students-rewards';
@@ -87,12 +88,13 @@ export const HomePage = ({ lang }: IHomePage) => {
               <ImageCard
                 key={el.url}
                 imageUrl={el.url}
+                
               />
             ))}
           </Marquee>
         </MotionDiv>
       </div>
-      <div className="mt-10">
+      <div className="mt-12">
         <MotionDiv direction="left">
           <Typography
             variant="h1"
@@ -106,6 +108,11 @@ export const HomePage = ({ lang }: IHomePage) => {
             2018-yil oktyabr oyidan 2023-yil aprel oyigacha bo‘lgan statistika
           </p>
         </MotionDiv>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8">
+        <ResultsWithNumbersCard />
+        <ResultsWithNumbersCard />
+        <ResultsWithNumbersCard />
       </div>
       <WhyItech />
       <StudentsOpinion />

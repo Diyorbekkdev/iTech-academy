@@ -19,6 +19,8 @@ import { Button, Chip } from '@nextui-org/react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 
+import { MotionDiv } from '../motion-div/motion-div';
+
 interface IProductCard extends IProduct {
   isHorizontal?: boolean;
   lang?: TLocale;
@@ -44,20 +46,8 @@ export const ProductCard: FC<IProductCard> = (props) => {
   const [hovered, setHovered] = useState(false);
   const { navigate } = useLocaleNavigate();
 
-  const { inView, ref } = useInView({ triggerOnce: true, threshold: 0.5 });
-
   return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: -20 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      ref={ref}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
-      transition={{ duration: 0.5 }}
-      className="grid grid-cols-1 h-full"
-    >
+    <MotionDiv direction='up'>
       <Card
         classNames={{
           base: `${isHorizontal && 'flex-row'} cursor-pointer border min-h-40 xsm:min-h-40 border-border-color rounded-xl hover:border-gray-200 relative overflow-hidden group shadow-sm`,
@@ -183,6 +173,6 @@ export const ProductCard: FC<IProductCard> = (props) => {
           </div>
         </CardBody>
       </Card>
-    </motion.div>
+    </MotionDiv>
   );
 };

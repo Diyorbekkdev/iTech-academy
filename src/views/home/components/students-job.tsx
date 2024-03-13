@@ -4,7 +4,7 @@ import { studentsJob } from '@/mock/students-jobs.data';
 
 import Marquee from 'react-fast-marquee';
 
-import { ImageCard } from '.';
+import { Image } from '@nextui-org/react';
 
 export const StudentsWork = () => {
   return (
@@ -20,11 +20,13 @@ export const StudentsWork = () => {
 
       <div className="mt-20">
         <MotionDiv direction="down">
-          <Marquee className="w-72 h-24">
+          <Marquee className="w-72 h-24 gap-2">
             {studentsJob.map((el) => (
-              <ImageCard
+              <Image
                 key={el.url}
-                imageUrl={el.url}
+                src={el.url}
+                alt="students-job"
+                className='m-3'
               />
             ))}
           </Marquee>

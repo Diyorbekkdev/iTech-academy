@@ -11,18 +11,19 @@ import Image from 'next/image';
 import StudentOpinion from './student-option';
 
 export const StudentsOpinion = () => {
-  const sliderRef = useRef(null);
+  const sliderRef = useRef<Slider | null>(null);
 
   const handleNext = () => {
-    sliderRef.current.slickNext();
+    sliderRef.current?.slickNext();
   };
 
   const handlePrevious = () => {
-    sliderRef.current.slickPrev();
+    sliderRef.current?.slickPrev();
   };
 
   const settings = {
     infinite: true,
+    loop: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,

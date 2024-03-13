@@ -1,6 +1,10 @@
 import React from 'react';
-
-const StudentOpinion = ({ name, videoUrl, text }) => {
+interface IStudentOpinion {
+  name: string;
+  videoUrl: string;
+  text: string;
+}
+const StudentOpinion = ({ name, videoUrl, text }:IStudentOpinion) => {
   return (
     <div className="relative flex flex-col items-center bg-light-gray shadow-md rounded-lg overflow-hidden">
       <h3 className="text-xl font-semibold absolute bottom-9 left-3 bg-white py-4 px-[18px] rounded-full">
