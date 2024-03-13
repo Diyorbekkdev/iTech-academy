@@ -52,12 +52,14 @@ import visa from '@/icons/visa.svg';
 import washingMachine_icon from '@/icons/washing-machine.svg';
 import whyItech from '@/icons/why-iTech.svg';
 import youtube from '@/icons/youtube.svg';
+import hamkorbank from '@/images/hamkorbank.png';
 import iTechMiniBanne2 from '@/images/itech-mini-banner -2.jpg';
 import iTechMiniBanner from '@/images/itech-mini-banner.jpg';
 import paymePng from '@/images/payme.png';
 
 export {
   paymePng,
+  hamkorbank,
   nextArrow,
   prevArrow,
   logo,

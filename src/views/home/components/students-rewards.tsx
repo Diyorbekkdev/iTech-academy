@@ -16,7 +16,7 @@ export const StudentsReward = () => {
         </Typography>
       </MotionDiv>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-7">
+      <div className="mt-10 grid grid-cols-1  sm:grid-cols-2 gap-7">
         {studentsRewards.map((item) => (
           <MotionDiv
             direction={item.id % 2 == 0 ? 'right' : 'left'}
@@ -24,7 +24,7 @@ export const StudentsReward = () => {
           >
             <div
               key={item.id}
-              className="p-10 bg-light-pink rounded-[20px] sm:w-full"
+              className="p-10 h-[300px] bg-light-pink rounded-[20px] sm:w-full"
             >
               <Image
                 className="mb-4"

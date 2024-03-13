@@ -1,4 +1,4 @@
-import { paymePng } from '.';
+import { hamkorbank, paymePng } from '.';
 
 interface ImarqueeData {
   url: string;
@@ -16,58 +16,19 @@ export const studentsJob: ImarqueeData[] = [
   {
     url: paymePng.src,
   },
+];
+
+export const studentsJobSecond: ImarqueeData[] = [
   {
-    url: paymePng.src,
+    url: hamkorbank.src,
   },
   {
-    url: paymePng.src,
+    url: hamkorbank.src,
   },
   {
-    url: paymePng.src,
+    url: hamkorbank.src,
   },
   {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
-  },
-  {
-    url: paymePng.src,
+    url: hamkorbank.src,
   },
 ];
