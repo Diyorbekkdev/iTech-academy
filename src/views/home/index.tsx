@@ -13,6 +13,7 @@ import { Image } from '@nextui-org/react';
 import { ImageCard } from './components';
 import { AboutCards } from './components/about-cards';
 import { CourseCategories } from './components/course-categories';
+import { Courses } from './components/courses';
 import { OurCourses } from './components/our-courses';
 import { OurLocations } from './components/our-locations';
 import { StudentsWork } from './components/students-job';
@@ -115,6 +116,7 @@ export const HomePage = ({ lang }: IHomePage) => {
       <StudentsReward />
       <StudentsWork />
       <CourseCategories />
+      <Courses />
       <OurLocations />
     </section>
   );

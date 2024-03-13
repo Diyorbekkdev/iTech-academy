@@ -22,9 +22,9 @@ export const OurLocations = () => {
             width="700"
             height="550"
             style={{ border: 0 }}
-            allowfullscreen="allow"
+            // allowfullscreen="allow"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
