@@ -3,20 +3,22 @@ import { MotionDiv } from '@/components/motion-div/motion-div';
 import { nextArrow, prevArrow } from '@/mock';
 import { studentOpinionsData } from '@/mock/students-opinion.data';
 
-import { useRef } from 'react';
+import { useRef, RefObject, createRef } from 'react';
 import Slider from 'react-slick';
 
 import Image from 'next/image';
 
 export const StudentsOpinion = () => {
-  const sliderRef = useRef(null);
+  // const sliderRef: RefObject<Slider | null> = useRef(null);
+  // const sliderRef = useRef(null);
+  const sliderRef = createRef<Slider>();
 
   const handleNext = () => {
-    sliderRef.current.slickNext();
+    sliderRef.current?.slickNext?.();
   };
 
   const handlePrevious = () => {
-    sliderRef.current.slickPrev();
+    sliderRef.current?.slickPrev?.();
   };
 
   const settings = {
