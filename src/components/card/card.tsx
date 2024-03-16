@@ -1,6 +1,7 @@
+import { Image } from '@nextui-org/react';
 import { ReactNode } from 'react';
 
-import Image from 'next/image';
+
 
 interface CardProps {
   item: {
