@@ -3,7 +3,7 @@ import { MotionDiv } from '@/components/motion-div/motion-div';
 import { nextArrow, prevArrow } from '@/mock';
 import { studentOpinionsData } from '@/mock/students-opinion.data';
 
-import { useRef } from 'react';
+import { useRef, RefObject, createRef } from 'react';
 import Slider from 'react-slick';
 
 import Image from 'next/image';
